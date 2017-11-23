@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="use_mock"
+        android:summary="Send dummy OBDII data"
+        android:title="Use Mock OBDII Service" />
+
+    <EditTextPreference
+        android:defaultValue="default"
+        android:inputType="text"
+        android:key="identity"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="MQTT Identity" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="leave_service"
+        android:summary="Leave the service running in background when app is closed"
+        android:title="Service running in background while closed" />
+
+
+</PreferenceScreen>
