@@ -1,0 +1,7 @@
+include ':app'
+include ':org.vopen.android_sdk.obd_service'
+include ':org.vopen.android_sdk.obd_client'
+include ':org.eclipse.paho.android.service'
+project(':org.vopen.android_sdk.obd_service').projectDir = new File(settingsDir, 'app/org.vopen.android_sdk.obd_service')
+project(':org.vopen.android_sdk.obd_client').projectDir = new File(settingsDir, 'app/org.vopen.android_sdk.obd_client')
+//project(':org.eclipse.paho.android.service').projectDir = new File(settingsDir, 'app/org.eclipse.paho.android.service')
